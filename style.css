@@ -1,0 +1,34 @@
+html,body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    padding: 100px;
+}
+#dil{
+    height:100px;
+    width: 100px;
+    background-color: red;
+    position: relative;
+    rotate: 45deg;
+    
+}
+#dil::before{
+    content: "";
+    height:100px;
+    width: 100px;
+    background-color: red;
+    position: absolute;
+    border-radius: 50%;
+    transform: translate(-50%,0);
+}
+#dil::after{
+    content: "";
+    height:100px;
+    width: 100px;
+    background-color: red;
+    position: absolute;
+    border-radius: 50%;
+    transform: translate(0,-50%);
+}
+
